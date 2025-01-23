@@ -1,14 +1,15 @@
+import React from 'react';
 import './index.scss';
+import { Success } from './components/Success';
+import { Users } from './components/Users';
+
+// Тут список пользователей: https://reqres.in/api/users
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <h2>Счетчик:</h2>
-        <h1>0</h1>
-        <button className="minus">- Минус</button>
-        <button className="plus">Плюс +</button>
-      </div>
+      <Users />
+      {/* <Success /> */}
     </div>
   );
 }
